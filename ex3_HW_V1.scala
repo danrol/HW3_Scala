@@ -7,7 +7,32 @@ animal eats and what sound it makes. Use abstract class and inheritance.
 */
 
 //************1 solution***********************************//
+abstract class Animal{
+  def eat:List[String]
+  def sound:String
+}
 
+case class Cat() extends Animal{
+  override def eat:List[String] = List(Mouse.toString, Bird.toString(), Fish.toString)
+  override def sound:String = "Meow"
+}
+case class Dog() extends Animal{
+  override def eat:List[String] = List("Meat", "Sausage", "Bone", "Vegatables")
+  override def sound:String = "Gav-Gav"
+}
+
+case class Mouse() extends Animal{
+  override def eat:List[String] = List("Vegatable", "Sugar", "People", "Bread")
+  override def sound:String = "Pick-Pick"
+}
+case class Bird() extends Animal{
+  override def eat:List[String] = List("Bread")
+  override def sound:String = "Kurli-Kurli"
+}
+case class Fish() extends Animal{
+  override def eat:List[String] = List("Bread")
+  override def sound:String = ""
+}
   
 //************2********************************************//
 /*
