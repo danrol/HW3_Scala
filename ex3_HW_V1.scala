@@ -45,7 +45,15 @@ For "n" little then 1, match “That's not a cycle!”
 */
    
 //************2 solution***********************************//
-    
+    def Cycle2(n:Int):String = n match{
+      case 1 => "Unicycle"
+      case 2 => "Bicycle"
+      case 3 => "Tricycle"
+      case 4 => "Quadricycle"
+      case x if x>4  => s"Cycle with $n wheels"
+      case y if y<1  => "That's not a cycle"
+      case _    => "Wrong input"
+    }
 //************3********************************************// 
 /*
 Cancled
