@@ -72,7 +72,15 @@ argument for a name and prints “started!”
 */
 
 //************5 solution***********************************// 
+class WalkActivity
 
+object WalkActivity{
+      var name:String = ""
+      def apply(name_str:String = "Jonny"):Unit={
+        name = name_str
+        println(s"$name started!")
+        }
+    }
 
 
 //************6********************************************//  
