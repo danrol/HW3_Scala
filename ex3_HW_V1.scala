@@ -8,29 +8,26 @@ animal eats and what sound it makes. Use abstract class and inheritance.
 
 //************1 solution***********************************//
 abstract class Animal{
-  def eat:String
+  def food:String
   def sound:String
 }
 
-case class Cat() extends Animal{
-  override def eat:String = "Mouse"
+ class Cat extends Animal{
+  override def food:String = "Mouse"
   override def sound:String = "Meow"
 }
-case class Dog() extends Animal{
-  override def eat:String = "Bone"
-  override def sound:String = "Gav-Gav"
-}
 
-case class Mouse() extends Animal{
-  override def eat:String = "Sugar"
+
+ class Mouse extends Animal{
+  override def food:String = "Sugar"
   override def sound:String = "Pick-Pick"
 }
-case class Duck() extends Animal{
-  override def eat:String = "Plant"
+ class Duck extends Animal{
+  override def food:String = "Plant"
   override def sound:String = "Kurli-Kurli"
 }
-case class Fish() extends Animal{
-  override def eat:String = "Bread"
+ class Fish extends Animal{
+  override def food:String = "Bread"
   override def sound:String = ""
 }
   
@@ -64,8 +61,14 @@ Create a case class that represents a Dog, using a String for
 name and a String for breed. Then, create a Vector of Dogs.
 */
 //************4 solution***********************************// 
+    case class Dog(name:String, breed:String)
     
-
+//Q4 {
+//=======
+//	assert(dogs(0) is "Dog(Fido,Golden Lab)")
+//	assert(dogs(1) is "Dog(Ruff,Alaskan Malamute)")
+//	assert(dogs(2) is "Dog(Fifi,Miniature Poodle)")
+//}
 //************5********************************************//
 /*
 Create a class WalkActivity that takes no class arguments. Create a
