@@ -91,8 +91,18 @@ build in exception (use case).
 */    
     
 //************6 solution************************************//    
- 
-  
+
+ val vec:Vector[String] = Vector("baba", "Yaga","Is", "Drunk")
+ def t(index:Int):String = {
+   try{
+   
+   vec(index)
+   }catch{
+     case ex:IndexOutOfBoundsException =>{
+       "IndexOutOfBoundsException"
+     }
+   }
+ }
 //**********OUTPUT,   The asserts are only for reference ,  ********//  
   
   
