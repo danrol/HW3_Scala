@@ -62,13 +62,8 @@ name and a String for breed. Then, create a Vector of Dogs.
 */
 //************4 solution***********************************// 
     case class Dog(name:String, breed:String)
-    
-//Q4 {
-//=======
-//	assert(dogs(0) is "Dog(Fido,Golden Lab)")
-//	assert(dogs(1) is "Dog(Ruff,Alaskan Malamute)")
-//	assert(dogs(2) is "Dog(Fifi,Miniature Poodle)")
-//}
+    val dogs:Vector[Dog] = 
+      Vector(new Dog("Fido", "Golden Lab"), new Dog("Ruff", "Alaskan Malamute"), new Dog("Fifi", "Miniature Poodle"))   
 //************5********************************************//
 /*
 Create a class WalkActivity that takes no class arguments. Create a
